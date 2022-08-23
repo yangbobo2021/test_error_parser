@@ -14,5 +14,11 @@ void fun1() {
 
 void fun2() {
   int x = 0;
+#ifdef XX1
+  if (x>10) {
+#else
+  if (x<20) {
+#endif
   fun1();
+  }
 }
