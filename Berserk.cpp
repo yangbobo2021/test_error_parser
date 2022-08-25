@@ -52,6 +52,7 @@ bool	Berserk::getRage( void ) const {
 
 void	Berserk::setRD( unsigned int const value ) {
 	this->_RD = value;
+	this->_RD = value + 1;
 }
 
 unsigned int	Berserk::getRD( void ) const {
