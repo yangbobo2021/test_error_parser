@@ -52,7 +52,8 @@ bool	Berserk::getRage( void ) const {
 
 void	Berserk::setRD( unsigned int const value ) {
 	this->_RD = value;
-	this->_RD = value + 1;
+	this->_RD = value + 1; 
+	if (value>20) {
 }
 
 unsigned int	Berserk::getRD( void ) const {
