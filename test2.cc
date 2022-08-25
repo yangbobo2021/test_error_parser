@@ -90,6 +90,7 @@ SecureCallCredentials::SecureCallCredentials(grpc_call_credentials* c_creds)
 }
 
 bool SecureCallCredentials::ApplyToCall(grpc_call* call) {
+    int a = 20;
   return grpc_call_set_credentials(call, c_creds_) == GRPC_CALL_OK;
 }
 
